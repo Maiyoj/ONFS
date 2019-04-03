@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!--
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Profile
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet" />
+  
+  <style>
+
+	body{
+	background:silver;
+	color:black;
+	padding:0;
+	margin:0;
+	background-position:relative;
+	background-size: cover;
+}
+.register>label{
+
+padding-left: 60px;
+margin-left: 80px;
+color: black;
+}
+.register>input{
+		width:36vh;
+		height:33px;
+		text-align: center;
+		font-weight: bold;
+		margin-left: 50px;
+}
+#sections{
+  margin-bottom: 2rem
+}
+
+.select{
+		margin-left:40px;
+    width:50vh;
+		height:33px;
+		
+}
+	
+  </style>
+
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="success">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+      -->
+      <div class="logo">
+            <i class='nc-icon nc-satisfied text-info' style='font-size:35px;'> Welcome!</i>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li>
+            <a href="./dashboard.html">
+              <i class="nc-icon nc-layout-11"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="active ">
+            <a href="./icons.html">
+              <i class= "nc-icon nc-single-02"></i>
+              <p>Profile</p>
+            </a>
+          </li>
+          <li>
+            <a href="./map.html">
+              <i class='nc-icon nc-paper'></i>
+              <p>Non-Resident Form</p>
+            </a>
+          </li>
+          <li>
+            <a href="./notifications.html">
+              <i class="nc-icon nc-box"></i>
+              <p>Reports</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand text-info" href="#pablo" style='font-size:38px;'>PROFILE</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <!-- <div class="panel-header panel-header-sm">
+  
+  
+</div> -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" style='background-color: silver;'>
+                <h5 class="card-title" style='text-align:center;'>STUDENTS DETAILS</h5>
+              </div>
+              <div class="card-body " style='background-color: silver;color:black'>
+                <div id="icons-wrapper">
+                    <section id="sections">
+                        <form method="POST" action="profile.php">
+                        <div class= "register">
+                                    <label>LAST NAME</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label>MIDDLE NAME</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label>FIRST NAME</label>
+                                </div>
+                                <div class="register">
+                                    <input type="text" name="lastname" required> 
+                                    <input type="text" name="middlename" required>;
+                                    <input type="text" name="firstname" required> 
+                                </div>
+                                        <br>
+                                <div class="register">
+                                <label>REG NO</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label>COURSE</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label>PHONE NO</label>                       
+                              </div>    
+                              <div class="register">
+  
+                                  <input type="text" name="regno" required>
+                                  <input type="text" name="course" required>
+                                  <input type="text" name="phoneno" required>
+                                  </div>
+                         
+                          </br>
+                            <div class="select">
+               
+                               <label style='color:black'>ACADEMIC YEAR</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select name="academic_year"required>
+                               <option> Select academic year </option>
+                               <option value="first year"> First year </option>
+                               <option value="second year"> Second year</option>
+                               <option value="third year"> Third year</option>
+                               <option value="fourth year"> Fourth year</option>
+                           </select>
+                            </div>
+                          </br>
+                          <div class="select">
+
+                           <label style='color:black'>SEMESTER</label>&nbsp;&nbsp;&nbsp;&nbsp;
+               
+                           <select name="semester"required>
+                                <option>Select semester</option>
+                                <option value="first semester">First semester</option>
+                                <option value="second semester">Second semester</option>                                      
+                            </select>
+                       </div>           
+                    </section> 
+                    <section id="sections">
+                      <h5 style='text-align:center;'>PARENT DETAILS</h5>
+                      <div class="register">
+                          <label>LAST NAME</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>MIDDLE NAME</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>FIRST NAME</label>
+                      </div>
+              <div class="register">
+                          <input type="text" name="plastname"required>
+                         <input type="text" name="pmiddlename" required>
+                         <input type="text" name="pfirstname" required>
+                         </div>
+                          <div> 
+                              <br>
+                              <br>
+                              <br>
+                              <div class="register">
+                              <label>ID NO</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <label>ADDRESS</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                              <label>PHONE NO</label>
+                              </div>
+              
+              
+                              <div class="register">
+              
+                          <input type="integer" name="idno"required>
+                          <input type="text" name="address"required>
+                          <input type="text" name="pphoneno"required>
+                          </div>
+                        </br>
+                          <p style="text-align:center"><button type="submit" name= "submit" class="btn">Submit</button></p>
+                        </form>  
+                    </section>                     
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer footer-black  footer-white ">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="credits ml-auto">
+              <span class="copyright">
+                ©
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>
+                
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer class="text-muted">
+            <div class="container">
+                
+              <p> &copy; 2019. University of Kabianga</p>
+              
+              
+          </div>
+          
+          </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  
+  <script>
+    function SelectText(element) {
+      var doc = document,
+        text = element,
+        range, selection;
+      if (doc.body.createTextRange) {
+        range = document.body.createTextRange();
+        range.moveToElementText(text);
+        range.select();
+      } else if (window.getSelection) {
+        selection = window.getSelection();
+        range = document.createRange();
+        range.selectNodeContents(text);
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+    }
+    window.onload = function() {
+      var iconsWrapper = document.getElementById('icons-wrapper'),
+        listItems = iconsWrapper.getElementsByTagName('li');
+      for (var i = 0; i < listItems.length; i++) {
+        listItems[i].onclick = function fun(event) {
+          var selectedTagName = event.target.tagName.toLowerCase();
+          if (selectedTagName == 'p' || selectedTagName == 'em') {
+            SelectText(event.target);
+          } else if (selectedTagName == 'input') {
+            event.target.setSelectionRange(0, event.target.value.length);
+          }
+        }
+
+        var beforeContentChar = window.getComputedStyle(listItems[i].getElementsByTagName('i')[0], '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, ""),
+          beforeContent = beforeContentChar.charCodeAt(0).toString(16);
+        var beforeContentElement = document.createElement("em");
+        beforeContentElement.textContent = "\\" + beforeContent;
+        listItems[i].appendChild(beforeContentElement);
+
+        //create input element to copy/paste chart
+        var charCharac = document.createElement('input');
+        charCharac.setAttribute('type', 'text');
+        charCharac.setAttribute('maxlength', '1');
+        charCharac.setAttribute('readonly', 'true');
+        charCharac.setAttribute('value', beforeContentChar);
+        listItems[i].appendChild(charCharac);
+      }
+    }
+  </script>
+</body>
+
+</html>

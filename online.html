@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Non-Resident Form
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <style>
+
+      body{
+      background:silver;
+      color:white;
+      padding:0;
+      margin:0;
+      background-position:relative;
+      background-size: cover;
+    }
+    .register>label{
+    
+    padding-left: 60px;
+    margin-left: 80px;
+    color:black;
+    }
+    .register>input{
+        width:36vh;
+        height:33px;
+        text-align: center;
+        font-weight: bold;
+        margin-left: 50px;
+    
+    }
+    #sections{
+      margin-bottom: 2rem
+    }
+    
+    .select{
+        margin-left:40px;
+        width:50vh;
+        height:33px;
+        color:black;
+        
+    }
+      
+      </style>
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="success">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+    <div class="logo">
+        <i class='nc-icon nc-satisfied text-info' style='font-size:35px;'> Welcome!</i>
+  </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+          <li>
+            <a href="./dashboard.html">
+              <i class="nc-icon nc-layout-11"></i>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <a href="./Profile.html">
+              <i class="nc-icon nc-single-02"></i>
+              <p>Profile</p>
+            </a>
+          </li>
+          <li class="active ">
+            <a href="./online.html">
+              <i class="nc-icon nc-paper"></i>
+              <p>Non-Resident Form</p>
+            </a>
+          </li>
+          <li>
+            <a href="./reports.html">
+              <i class="nc-icon nc-box"></i>
+              <p>Reports</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand text-info" href="#pablo" style='font-size:38px;'>NON-RESIDENT FORM</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <!-- <div class="panel-header panel-header-sm">
+  
+  
+</div> -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card ">
+                <div class="card-header"  style='background-color: silver;'>
+                    <h5 class="card-title" style='text-align:center; color:black;'>HOSTEL DETAILS</h5>
+                </div>
+              <div class="card-body" style='background-color: silver;color:black'>
+                <section id="sections">
+                    <form role="role" method="POST" action="online.php"><br>  
+                     
+                      <div class="register">
+                          <label>HOSTEL NAME</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>LOCATION</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <label>NO OF ROOMS</label>
+                  
+                      </div>                 
+                      <div class="register">
+                          <input type="text" name="hostelname"required>
+                          <input type="text" name="location"required>
+                          <input type="text" name="noofrooms"required>
+                      </div>
+                            <br>
+                              
+                              <div class="register">
+                  
+                               <label>SIZE OF ROOMS</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               <label>SOURCE OF FUEL</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               <label>SOURCE OF WATER</label>
+                  
+                              </div>
+                  
+                              <div class="register">
+                          <input type="text" name="sizeofrooms"required>
+                          <input type="text" name="sourceoffuel"required>                      
+                          <input type="text" name="sourceofwater"required>
+                  
+                              </div>
+                            </br>
+                          </br>
+                              <div class="select" >
+                                  &nbsp;&nbsp;<label style="color:black;">HOUSE TYPE</label>
+                                  <select name="housetype" required>
+                                      &nbsp;&nbsp;<option>housetype</option>
+                                      <option value="permanent">Permanent</option>
+                                  <option value="semi-permanent">semi-permanet</option>
+                                  <option value="timberwall">timberwall</option>
+                                  
+                              </select>
+                          </div>
+                        </section>
+                          <section id="sections">
+                              <h5 style='text-align:center;'>LANDLORDS DETAILS</h5>
+                          </br>
+                              <div class="register">
+            <label>LAST NAME</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>MIDDLE NAME</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label>FIRST NAME</label>
+                </div>
+
+<div class="register">
+            <input type="text" name="lastname" required>
+            <input type="text" name="middlename" required>
+            <input type="text" name="firstname"required>
+</div>
+</br>
+</br>
+<div class="register">
+    <label>ID NO</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label>ADDRESS</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label>PHONE NO</label>
+
+    </div>
+    <div class="register">
+<input type="integer" name="idno" required>
+
+<input type="text" name="address" required>
+
+<input type="text" name="phoneno" required>
+
+    </div>
+                          
+                        </br>
+                        <p style="text-align:center"><button type="submit" name= "submit" class="btn">Submit</button></p>
+                          </form>
+                        </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="text-muted">
+          <div class="container">
+              
+            <p> &copy; 2019. University of Kabianga</p>
+            
+            
+        </div>
+        
+        </footer>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  
+</body>
+
+</html>
